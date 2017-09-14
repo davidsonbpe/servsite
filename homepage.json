@@ -1,5 +1,15 @@
 {
 	"name": "Decom tv",
 	"description": "<a href=\"https://i.ytimg.com/vi/TSVyD4qwwZ8/hqdefault.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"https://i.ytimg.com/vi/TSVyD4qwwZ8/hqdefault.jpg\" alt=\"\" width=\"480\" height=\"360\" /></a>",
-	"twitter": "davidsonbpe"
+	"twitter": "davidsonbpe",
+	"painting": [
+		{
+			"image": "https://cdn.rawgit.com/davidsonbpe/servsite/84bed84d8a50e549f7313805bd814b1f436d21f4/images/android-close.png",
+			"name": "Android close"
+		},
+		{
+			"image": "https://cdn.rawgit.com/davidsonbpe/servsite/b48e3b7c2cff05c37448a011bb3c408af2dda329/images/website-icon.png",
+			"name": "Website icon"
+		}
+	]
 }
