@@ -25,6 +25,10 @@
 		{
 			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBta9kpSfIgaB9JfELLzQtMhl7FwOyv6UXHWZkZFTFLEGObM_tCg",
 			"name": "Images"
+		},
+		{
+			"image": "http://www.freeiconspng.com/uploads/team-icon-21.png",
+			"name": "Team icon 21"
 		}
 	]
 }
