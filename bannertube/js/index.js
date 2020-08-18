@@ -1,7 +1,7 @@
 
 
 $(function(){
-  var url_base = 'http://img.youtube.com/vi/';
+  var url_base = 'https://img.youtube.com/vi/';
   var url_max = '/maxresdefault.jpg';
   var url_0 = '/mqdefault.jpg';
   var url_00 = '/hqdefault.jpg';
