@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Uppercase TXT</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/png" sizes="36x36" href="css/baseline.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="36x36" href="css/baseline.png" />
+    <link rel="stylesheet" href="css/destrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light shadow">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand text-uppercase font-italic" href=""> Uppercase<small> TXT</small></a>
+        </div>
+    </nav>
+
+    <div class="container pt-3" ng-app>
+
+        <div class="mb-3">
+            <label for="FormControTex" class="form-label text-uppercase">digite TXT</label>
+            <textarea class="form-control" ng-model="test" placeholder="digite aqui..." rows="3"></textarea>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h6 id="block" class="text-center text-uppercase" style="text-transform: uppercase;">{{test}}</h6>
+            </div>
+        </div>
+        <div class="pt-3">
+            <button type="button" class="btn btn-primary float-right" onclick="selectText('block')">COPIAR</button>
+        </div>
+
+    </div>
+    
+    <footer class="bg-dark container-fluid fixed-bottom">
+
+        <div class="row pt-2 pb-3">
+            <div class="col-sm text-left">
+                <p style="margin: 15px 10px 0px;" class="text-muted">Developer | Powered by <a href="https://davidsonbpe.blogspot.com/" target="_blank">Davidsonbpe</a></p>
+            </div>
+
+            <div class="col-sm text-right">
+                <div class="navbar-brand text-light font-italic text-uppercase mt-1"> Uppercase<small> TXT</small></div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/degular.min.js"></script>
+    <script src="js/depper.min.js"></script>
+    <script src="js/destrap.min.js"></script>
+
+    <script>
+        function selectText(element) {
+            var doc = document,
+                text = doc.getElementById(element),
+                range, selection;
+            if (doc.body.createTextRange) { //ms
+                range = doc.body.createTextRange();
+                range.moveToElementText(text);
+                range.select();
+            } else if (window.getSelection) { //all others
+                selection = window.getSelection();
+                range = doc.createRange();
+                range.selectNodeContents(text);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
