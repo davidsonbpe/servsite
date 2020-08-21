@@ -9,3 +9,6 @@ https://davidsonbpe.github.io/servsite/bannertube
 
 ## Any Image To CSS
 https://davidsonbpe.github.io/servsite/anyimage-tocss
+
+## SVG background-image
+https://davidsonbpe.github.io/servsite/svg-background
