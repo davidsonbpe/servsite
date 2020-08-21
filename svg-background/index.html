@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG background-image</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="icon" type="image/png" sizes="36x36" href="css/upload.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="36x36" href="css/upload.png" />
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="svg-bg">
+        <label>
+            <span class="svg-bg__label">Your SVG: <small>(Type or upload)</small>
+                <div class="svg-bg__button" is="file-upload" v-on:load="loaded">Upload SVG</div>
+            </span>
+            <textarea class="svg-bg__input" ref="input" v-model="input">
+
+  </textarea>
+        </label>
+
+        <span class="svg-bg__label">background-image for CSS:
+            <button class="svg-bg__button" v-on:click="copy">Copy Output</button></span>
+        <div class="svg-bg__output" ref="output" v-html="output"></div>
+    </div>
+
+    <script src="js/vue.min.js"></script>
+    <script src="js/epmrgo.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
